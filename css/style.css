@@ -2,9 +2,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
-  flex: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
   background: #fff;
   text-align: center;
+  margin: 0 auto;
 }
 
 .name {
@@ -21,12 +23,119 @@ body {
   color: #000;
   margin: auto;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 5px;
 
 }
 .intro {
   text-align: left;
-  color: #000;
+  color: #7e7e7e;
   font-weight: lighter;
-  font-size: .75em;
+  font-size: .90em;
+  padding: 20px 10px 50px 10px;
+}
+
+.c-info {
+
+  padding-top: 30px;
+}
+
+
+/* ---- Layout Styles ----- */
+.main-header span{
+  margin-bottom: auto;
+  border-bottom: solid 4px #000;
+
+}
+.contact {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 5px;
+  text-align: left;
+}
+/* --- Form Layout ---*/
+input[type="text"],
+input[type="email"],
+input[type="number"], {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+
+  padding: 6px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  width: 85%;
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+/* ---- Float Clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
