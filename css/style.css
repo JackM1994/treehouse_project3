@@ -1,0 +1,32 @@
+/* -----Base Styles -----*/
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex: auto;
+  background: #fff;
+  text-align: center;
+}
+
+.name {
+  text-transform: uppercase;
+  background: #1c3459;
+  color: #fff;
+  padding: 15px;
+  margin: auto;
+  text-shadow: 0 1px 1px #222;
+
+}
+
+.sign-up {
+  color: #000;
+  margin: auto;
+  font-weight: bold;
+  padding-top: 15px;
+
+}
+.intro {
+  text-align: left;
+  color: #000;
+  font-weight: lighter;
+  font-size: .75em;
+}
