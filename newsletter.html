@@ -22,10 +22,10 @@
         <h2 class="c-info">Contact Information </h2>
         <fieldset class="top-half">
           <label for="name"> Full Name </label>
-          <input type="text" id ="name" name="user_name">
+          <input type="text" id ="name" name="user_name" placeholder="Required" required>
 
           <label for="mail"> Email Address </label>
-          <input type="email" id ="mail" name="user_email">
+          <input type="email" id ="mail" name="user_email" placeholder="Required" required>
 
           <label for="number"> Phone Number </label>
           <input type="number" id ="number" name="user_number">
@@ -88,22 +88,40 @@
           <input type="text" id ="zip" name="user_zip">
 
         </fieldset>
+      </div>
 
+        <div class ="newsletter">
         <fieldset class="bottom-half">
           <h2 class="news">Newsletter</h2>
           <p class="choose">Select the newsletters you would like to recieve</p>
-          <input type="checkbox" id="html-news" value="html-news" name="html_user">
-          <label class ="selection" for="html-news">HTML News</label>
+          <input type="checkbox" id="language" value="html-news" name="html_user">
+          <label class ="selection" for="language">HTML News</label><br>
 
-          <input type="checkbox" id="css-news" value="css-news" name="css_user">
-          <label class ="selection" for="css-news">CSS News</label>
+          <input type="checkbox" id="language" value="css-news" name="css_user">
+          <label class ="selection" for="language">CSS News</label><br>
 
-          <input type="checkbox" id="javascript-news" value="javascript-news" name="javascript_user">
-          <label class ="selection" for="javascript-news">Javascript News</label>
+          <input type="checkbox" id="language" value="javascript-news" name="javascript_user">
+          <label class ="selection" for="language">Javascript News</label>
+
+          <p> Newsletter format </p>
+          <input type="radio" id="format" value="html-for" name="html_format">
+          <label class="selection" for="format">HTML</label><br>
+
+          <input type="radio" id="format" value="plain" name="plain_format">
+          <label class="selection" for="format">Plain text</label>
+
+          <p>Other topics you'd like to hear about</p>
+          <textarea id="usertext" name="user_text"></textarea>
         </fieldset>
 
+          <button type="submit">Sign up</button>
+        </div>
         </form>
-    </div>
+
+        <footer class="main-footer">
+          <span><i>Copyright The Code Review</i></span>
+        </footer>
+
   </body>
 
 </html>
