@@ -1,7 +1,5 @@
 /* -----Base Styles -----*/
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+* {
   box-sizing: border-box;
 }
 
@@ -117,11 +115,9 @@ input:focus {
   transform: scale(1.025);
   transition-duration: .2s;
 }
-/* --- I was trying to make the label highlight when user selected its corresponding input box */
 
-/* input:focus + label {
-  color: blue; */
-}
+
+
 /*-----*/
 input:required {
   border: 1px solid firebrick;
@@ -252,6 +248,7 @@ button:hover {
 
     body {
       margin: 0;
+      padding: 0;
     }
 
     .contact input {
@@ -260,23 +257,20 @@ button:hover {
 
     .contact,
     .newsletter {
-      position: relative;
-      width: 65%;
-      margin: 0;
-      padding-left: 200px;
-      text-align: left;
       flex-direction: column;
       align-items: stretch;
+      width: 75%;
+      margin: auto;
+}
+  /* .contact-label {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
 
-    }
-    .contact label {
-      position: absolute;
-      left: -100px;
-      padding-top: 20px;
-      padding-left: 200px;
-
-
-    }
-
-
+  .contact input {
+    display: inline-block;
+    float: right;
+    width: 75%;
+  } I tried to move labels to the left of the  input boxes but it was displaying weird */
 }
