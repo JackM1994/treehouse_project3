@@ -85,7 +85,7 @@ body {
   border-bottom: solid 4px #000;
 
 }
-.contact h2 {
+.top-half h2 {
   padding-left: 10px;
 }
 
@@ -96,6 +96,7 @@ input[type="email"],
 input[type="number"],
 textarea,
 select {
+
   background: rgba(255,255,255,0.1);
   border-bottom-color: #000 ;
   font-size: 16px;
@@ -115,7 +116,10 @@ input:focus {
   transform: scale(1.025);
   transition-duration: .2s;
 }
+#zip {
 
+  max-width: 50%;
+}
 
 
 /*-----*/
@@ -154,7 +158,6 @@ select {
 
 fieldset {
 
-
   margin-bottom: 5px;
   border: none;
 }
@@ -165,9 +168,10 @@ legend {
 }
 
 label {
-  display: block;
 
+  display: block;
   margin-bottom: 8px;
+
 }
 
 label.selection {
@@ -247,30 +251,39 @@ button:hover {
 @media (min-width: 768px){
 
     body {
+
       margin: 0;
       padding: 0;
     }
 
-    .contact input {
-      margin: 10px 0;
+    .top-half .contact{
+      flex-direction: row;
     }
-
     .contact,
     .newsletter {
-      flex-direction: column;
-      align-items: stretch;
       width: 75%;
       margin: auto;
-}
-  /* .contact-label {
-    display: inline-block;
-    float: left;
-    width: 25%;
-  }
+    }
 
-  .contact input {
-    display: inline-block;
-    float: right;
-    width: 75%;
-  } I tried to move labels to the left of the  input boxes but it was displaying weird */
+    .top-half input,select {
+      flex-grow: 1;
+      flex-basis: 75%;
+    }
+    .top-half label {
+      flex-basis: 25%;
+      height: 50px;
+      margin: auto 0;
+    }
+    .c-info{
+      padding-left: 180px;
+      padding-right: 180px;
+      text-align: left;
+    }
+
+    #zip {
+      max-width: 25%;
+    }
+
+
+
 }
